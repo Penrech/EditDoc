@@ -4,4 +4,7 @@
     <item android:title="@string/edit_title"
         android:id="@+id/edit_title"
         />
+    <item android:title="@string/edit_body"
+        android:id="@+id/edit_body"
+        />
 </menu>
