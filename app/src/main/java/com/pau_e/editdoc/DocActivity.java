@@ -43,4 +43,16 @@ public class DocActivity extends AppCompatActivity {
         intent.putExtra("text",title.getText().toString());
         startActivityForResult(intent,0);
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode){
+            case 0:
+                if (resultCode == RESULT_OK){
+                    String text = data.getStringExtra("text");
+                    title.setText(text);
+                }
+                break;
+        }
+    }
 }
