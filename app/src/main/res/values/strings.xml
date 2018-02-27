@@ -5,6 +5,6 @@
     <string name="save">Guardar</string>
     <string name="edit_title">Edita Título</string>
     <string name="edit_body">Edit Body</string>
-    <string name="NoSavedChanges">Has realizado cambios que no serán guardados. ¿Deseas continuar?</string>
+    <string name="NoSavedChanges">Has realizado cambios. ¿Deseas guardarlos?</string>
     <string name="NoSavedChangesAlert">Alerta</string>
 </resources>

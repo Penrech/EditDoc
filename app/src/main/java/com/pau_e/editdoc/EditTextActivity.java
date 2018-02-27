@@ -39,24 +39,25 @@ public class EditTextActivity extends AppCompatActivity {
             builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
-                    finish();
+                   saveResult();
                 }
             });
-            builder.setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                }
-            });
+            builder.setNegativeButton(android.R.string.no, null);
             builder.create().show();
         }
         else{
             finish();
         }
     }
-    public void onSave(View view) {
+
+    private void saveResult() {
         Intent data = new Intent();
         data.putExtra("text",edit_text.getText().toString());
         setResult(RESULT_OK,data);
         finish();
+    }
+
+    public void onSave(View view) {
+        saveResult();
     }
 }
